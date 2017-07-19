@@ -1,0 +1,27 @@
+{
+  "name": "webpack-starter-package",
+  "version": "1.0.0",
+  "description": "Webpack starter package with Babel support",
+  "keyword": {},
+  "homepage": "",
+  "repository": "https://github.com/rivasyafri/webpack-starter-trg.git",
+  "bugs": {
+    "url": "",
+    "email": "rivasyafri@gmail.com"
+  },
+  "main": "app/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --env development",
+    "build": "webpack --env production"
+  },
+  "author": "Riva Syafri Rachmatullah <rivasyafri@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "html-webpack-plugin": "^2.29.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
