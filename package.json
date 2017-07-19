@@ -11,7 +11,7 @@
   },
   "main": "app/index.js",
   "scripts": {
-    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
+    "start": "nodemon --watch webpack.config.js --watch webpack.parts.js --exec \"webpack-dev-server --env development\"",
     "build": "webpack --env production",
     "lint:js": "eslint app/ webpack.*.js --cache",
     "lint:js fix": "eslint app/ webpack.*.js --cache -- --fix"
@@ -20,10 +20,12 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
+    "css-loader": "^0.28.4",
     "eslint": "^4.2.0",
     "eslint-loader": "^1.9.0",
     "html-webpack-plugin": "^2.29.0",
     "nodemon": "^1.11.0",
+    "style-loader": "^0.18.2",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1",
     "webpack-merge": "^4.1.0"
